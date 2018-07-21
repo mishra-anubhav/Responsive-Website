@@ -1,0 +1,129 @@
+.text2
+{
+    padding:100px;
+}
+.text
+{
+    padding:100px;
+}
+.center
+{
+   text-align: center;
+}    
+.heading{
+    font-weight: 500;
+    font-size: 35px ;
+    margin-bottom:20px;
+    margin-top:15px;
+    border-bottom: 3px solid #9be353;
+    
+}
+.content{
+    margin-top:10px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px ;
+    color: black;
+}
+.firstimg
+{   
+    margin-top:50px;
+    height:450px;
+    width:450px;
+ 
+}
+.secondimg
+{
+    margin-top:50px;
+    height:450px;
+    width:450px;
+    
+}
+.thirdimg{
+    margin-top:50px;
+   height:450px;
+   width:450px;
+ 
+}
+.fourthimg{
+    margin-top:50px;
+    height:320px;
+    width:320px;
+ 
+}
+.fifthimg{
+    margin-top:50px;
+    height:400px;
+    width:380px;
+ 
+}
+//moving magic
+img{
+    /* Starting position */
+ -moz-transform:translateY(2%);
+ -webkit-transform:translateY(2%);	
+ transform:translateY(2%);
+ /* Apply animation to this element */	
+ -moz-animation: vertically 1s linear infinite alternate;
+ -webkit-animation: vertically 1s linear infinite alternate;
+ animation: vertically 1s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes vertically {
+ 0%   { -moz-transform: translateY(70%); }
+ 100% { -moz-transform: translateY(0%); }
+}
+@-webkit-keyframes vertically {
+ 0%   { -webkit-transform: translateY(70%); }
+ 100% { -webkit-transform: translateY(0%); }
+}
+@keyframes vertically {
+ 0%   { 
+ -moz-transform: translateY(70%); /* Browser bug fix */
+ -webkit-transform: translateY(70%); /* Browser bug fix */
+ transform: translateY(3%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(0%); /* Browser bug fix */
+ -webkit-transform: translateY(0%); /* Browser bug fix */
+ transform: translateY(0%); 
+ }
+}
+@media screen and (max-width: 1140px) 
+{
+.text
+{
+    padding:70px;
+}
+.text2
+{
+    padding:50px;
+}
+.firstimg
+{   
+    height:320px;
+    width:320px;
+    margin-top:50px;
+}
+.secondimg
+{
+    height:320px;
+    width:320px;
+    margin-top:50px;
+}
+.thirdimg{
+    height:320px;
+    width:320px;
+    margin-top:50px;
+}
+.fourthimg{
+    height:320px;
+    width:320px;
+    margin-top:50px;
+}
+.fifthimg{
+        height:250px;
+        width:250px;
+        margin-top:50px;
+}
+}

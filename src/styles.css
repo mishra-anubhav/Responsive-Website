@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0;
+}
