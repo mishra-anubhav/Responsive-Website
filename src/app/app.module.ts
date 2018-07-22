@@ -14,6 +14,7 @@ import { FooterComponent } from './landing-page/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CbodyComponent } from './contact/cbody/cbody.component';
 import { BodyfaqComponent } from './contact/bodyfaq/bodyfaq.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BodyfaqComponent } from './contact/bodyfaq/bodyfaq.component';
     FooterComponent,
     ContactComponent,
     CbodyComponent,
-    BodyfaqComponent
+    BodyfaqComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

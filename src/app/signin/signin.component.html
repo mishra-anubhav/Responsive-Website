@@ -1,0 +1,39 @@
+<div class="body">
+  <div id="login-box">
+    <div id="mybutton">
+              <a class="back" style="text-decoration:none;color:white"  routerLink="">
+              <i class="icon ion-md-planet"></i> HOME</a>
+        </div>
+    <div class="container">
+        <img class="logo"  src="../../../assets/consortym logo.png">
+    </div>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="left">
+      <h1>Sign In</h1>
+      
+      <input type="text" name="email" ngModel  placeholder="E-mail" required email
+      #email="ngModel"   />
+      <span *ngIf="!email.valid && email.touched" style="color:red; font-size: 12px;" >
+        Please enter valid email
+      </span>
+      <input type="password" name="password" placeholder="Password" />
+      
+      <button type="submit"
+        [disabled]="!f.valid" class="submit">Sign In</button>
+        <a routerLink="/signup" style="text-decoration: none;color:white">
+        <button   class="signup">
+         Sign Up       
+        </button>
+        </a>
+    </div></form>
+    <div class="or">OR</div>
+    <div class="right">
+             
+      <button class="social-signin facebook"> <i class="icon ion-logo-facebook"></i>  </button>
+      <button class="social-signin twitter"><i class="icon ion-logo-twitter"></i></button>
+      <button class="social-signin google"><i class="icon ion-logo-googleplus"></i></button>
+    </div>
+   
+  </div>
+  </div>
