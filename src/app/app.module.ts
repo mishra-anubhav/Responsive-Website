@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CbodyComponent } from './contact/cbody/cbody.component';
 import { BodyfaqComponent } from './contact/bodyfaq/bodyfaq.component';
 import { SigninComponent } from './signin/signin.component';
+import { CopyrightComponent } from './landing-page/copyright/copyright.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SigninComponent } from './signin/signin.component';
     ContactComponent,
     CbodyComponent,
     BodyfaqComponent,
-    SigninComponent
+    SigninComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,

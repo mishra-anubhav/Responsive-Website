@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
+display='none';
 
-  constructor() { }
+
+  constructor() {}
+    onCloseHandled(){
+      this.display='none'; 
+   }
+   openModal(){
+    this.display='block'; 
+   }
 
   ngOnInit() {
   }

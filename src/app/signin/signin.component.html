@@ -1,13 +1,15 @@
 <div class="body">
   <div id="login-box">
-    <div id="mybutton">
+    <!-- <div id="mybutton">
               <a class="back" style="text-decoration:none;color:white"  routerLink="">
-              <i class="icon ion-md-planet"></i> HOME</a>
-        </div>
+              <i class="icon ion-md-home"></i> HOME</a>
+        </div> -->
     <div class="container">
-        <img class="logo"  src="../../../assets/consortym logo.png">
-    </div>
-
+        
+    <a routerLink="">
+      <img class=logo src="../../../assets/consortym logo.png">
+      <div id ="name"> <span class="dot"></span> CONSORTYM <span class="dot"></span></div></a>
+    </div><br><br>
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="left">
       <h1>Sign In</h1>
@@ -33,7 +35,9 @@
       <button class="social-signin facebook"> <i class="icon ion-logo-facebook"></i>  </button>
       <button class="social-signin twitter"><i class="icon ion-logo-twitter"></i></button>
       <button class="social-signin google"><i class="icon ion-logo-googleplus"></i></button>
+      <br>
+      <p class="copyright"> &copy; 2018 CONSORTYM  </p>   
     </div>
-   
+    
   </div>
   </div>
