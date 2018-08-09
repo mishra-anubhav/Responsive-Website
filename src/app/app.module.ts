@@ -14,8 +14,9 @@ import { FooterComponent } from './landing-page/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CbodyComponent } from './contact/cbody/cbody.component';
 import { BodyfaqComponent } from './contact/bodyfaq/bodyfaq.component';
-import { SigninComponent } from './signin/signin.component';
+import { SigninComponent } from './auth/signin/signin.component';
 import { CopyrightComponent } from './landing-page/copyright/copyright.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CopyrightComponent } from './landing-page/copyright/copyright.component
     CbodyComponent,
     BodyfaqComponent,
     SigninComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
