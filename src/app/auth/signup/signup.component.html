@@ -1,3 +1,45 @@
-<p>
-  signup works!
-</p>
+<div class="body">
+  <div id="login-box">
+    <!-- <div id="mybutton">
+              <a class="back" style="text-decoration:none;color:white"  routerLink="">
+              <i class="icon ion-md-home"></i> HOME</a>
+        </div> -->
+    <div class="container">
+        
+    <a routerLink="">
+      <img class=logo src="../../../assets/consortym logo.png">
+      <div id ="name"> <span class="dot"></span> SMINDLE <span class="dot"></span></div></a>
+    </div><br>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="left">
+      <h1>Sign Up</h1>
+      <input type="text" name="name" placeholder="Full Name" />
+      <input type="text" name="email" ngModel  placeholder="E-mail" required email
+      #email="ngModel"   />
+      <span *ngIf="!email.valid && email.touched" style="color:red; font-size: 10px;" >
+        Please enter valid email
+      </span>
+      <input type="password" name="password" placeholder="Password (must be of 8 letter)" />
+
+      <input type="password" name="password" placeholder="Confirm Password" />
+      
+      <button type="submit"
+        [disabled]="!f.valid" class="submit">Sign Up</button>
+        <a routerLink="/signin" style="text-decoration: none;color:white">
+        <button   class="signin">
+         Sign In       
+        </button>
+        </a>
+    </div></form>
+    <div class="or">OR</div>
+    <div class="right">
+             
+      <button class="social-signin facebook"> <i class="icon ion-logo-facebook"></i>  </button>
+      <button class="social-signin twitter"><i class="icon ion-logo-twitter"></i></button>
+      <button class="social-signin google"><i class="icon ion-logo-googleplus"></i></button>
+      <br>
+      <p class="copyright"> &copy; 2018 SMINDLE  </p>   
+    </div>
+    
+  </div>
+  </div>

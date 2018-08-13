@@ -17,6 +17,8 @@ import { BodyfaqComponent } from './contact/bodyfaq/bodyfaq.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { CopyrightComponent } from './landing-page/copyright/copyright.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { ProductComponent } from './product/product.component';
+import { PbodyComponent } from './product/pbody/pbody.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { SignupComponent } from './auth/signup/signup.component';
     BodyfaqComponent,
     SigninComponent,
     CopyrightComponent,
-    SignupComponent
+    SignupComponent,
+    ProductComponent,
+    PbodyComponent
   ],
   imports: [
     BrowserModule,
